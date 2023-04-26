@@ -20,9 +20,8 @@ let package = Package(
 	products: [
 		// Products define the executables and libraries produced by a package, and make them visible to other packages.
 		// The library that you can actually import
-		.library(
-			name: "PopupDialog",
-			targets: ["PopupDialog"])
+		.library(name: "PopupDialog", targets: ["PopupDialog"]),
+        .library(name: "PopupDialogStatic", type: .static, targets: ["PopupDialog"])
 	],
 	// Your package might need other packages.
 	// Due to being decentralized you have to tell SPM where to look.
