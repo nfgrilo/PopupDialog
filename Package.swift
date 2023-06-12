@@ -46,6 +46,6 @@ let package = Package(
             ],
             linkerSettings: [
                 .unsafeFlags(["-Xlinker", "-application_extension"])
-            ]a)
+            ])
 	]
 )
