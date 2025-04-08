@@ -40,12 +40,6 @@ let package = Package(
 			dependencies:[
 				.product(name: "DynamicBlurView", package: "DynamicBlurView")
 			],
-			path: "PopupDialog/Classes",
-            swiftSettings: [
-                .unsafeFlags(["-Xfrontend", "-application-extension"])
-            ],
-            linkerSettings: [
-                .unsafeFlags(["-Xlinker", "-application_extension"])
-            ])
+			path: "PopupDialog/Classes")
 	]
 )
